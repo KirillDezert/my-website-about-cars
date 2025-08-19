@@ -1,0 +1,38 @@
+.cars{
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    overflow: auto;
+    max-width: 100%;
+    color: black;
+    background-color: antiquewhite;
+    border-style: outset;
+    border-color: bisque;
+    background-color: azure;
+}
+
+ .ul{
+    list-style-type: none;
+    padding: 0;
+   }
+
+   .li {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+   }
+
+   button {
+    padding: 10px 20px;
+    background-color: black;
+    color: aliceblue;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+   }
+
+   button :hover {
+    background-color: #0056b3;
+   }

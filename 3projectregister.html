@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration form for account</title>
+    <style>
+        body{
+           font-family: Arial, sans-serif;
+           background: black;
+           color: white;
+           display:flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+           margin: 0;
+        }
+
+        .form-container{
+            color: wheat;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label{
+            display: block;
+            margin: 5px 0 3px;
+        }
+
+        input{
+            width: 100%;
+            padding: 8%;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        button{
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover{
+         background-color:#0088cc; 
+        }
+        
+        .message{
+            text-align: center;
+      margin-top: 10px;
+      font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Register</h2>
+
+        <form id="registration">
+            <label for="name">Full name</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" required minlength="7">
+            
+            <button type="submit">Sign up</button>
+        </form>
+
+        <p class="message" id="formMessages"></p>
+    </div>
+
+    <script>
+        const form = document.getElementById('registration');
+        const message = document.getElementById('formMessages');
+
+        form.addEventListener('submit', function(event){
+            event.preventDefault();
+
+            const name = document.getElementById('name').value-trim();
+            const email =document.getElementById('email').value-trim();
+            const password =document.getElementById('password').value-trim();
+
+            if (password.lenght<7){
+                message.textContent = "Password should be created at least from 6 symbols";
+                message.style.color = "lightred";
+
+                form.reset();
+            }
+
+        })
+    </script>
+    
+</body>
+</html>

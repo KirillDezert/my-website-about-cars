@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All about Japanese cars</title>
+    <script src="page.js" defer></script>
+    <link src="stylesheets" href="page.css">
+<style>                                                                    
+    body{
+        background-color: black;
+      
+    }
+    .important{
+        border-style: outset;
+        border-color: antiquewhite;
+        background-color: aliceblue;
+        color: black;
+        text-align: center;
+    }
+    .company{
+        border-style: outset;
+        border-color: aliceblue;
+        background-color: beige;
+        color: black;
+        font-size: large;
+        padding: 10px;
+        line-height: 1.5;
+        text-align: left;
+    }
+    .info{
+        border-style: outset;
+        border-color: aliceblue;
+        background-color: antiquewhite;
+        color: black;
+        text-align: center;
+        font-size: large;
+    }
+   .T{
+    font-weight: bold;
+    color: black;
+   }
+   .cars{
+    background-color: antiquewhite;
+    border: 2px outset antiquewhite;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: black;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    box-shadow: 0 4px 10px rgba(0,0 ,0 ,0.1 );
+    
+   }
+   .cars p{
+    text-align: justify;
+   }
+   .p{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+   }
+   .apps{
+   background-color: azure;
+   border: 2px outset antiquewhite;
+   padding: 20px;
+   margin: 30px auto;
+   max-width: 900px;
+   border-radius: 10px;
+   font-family: 'Segoe UI', sans-serif;
+   font-size: 16px;
+   line-height: 1.6;
+   color: black;
+   white-space: normal;
+   overflow-wrap: break-word;
+   word-break: word-break;
+   box-shadow: 0 4px 10px rgb(0, 0, 0,0.1);
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   
+   }
+  .button{
+    background-color: black;
+    color: aliceblue;
+    padding: 15px 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 1);
+    
+  }
+
+  button :hover{
+    background-color: black;
+    transform: scale(1.05);
+  }
+
+  ul{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+  }
+  ul li {
+    background-color: #1c1c1c;
+    margin: 10px auto;
+    padding: 15px;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  }
+  .cars{
+    background-color: #1c1c1c;
+    color: aliceblue;
+    padding: 10px;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+  .w{
+     background-color: #1c1c1c;
+    color: aliceblue;
+    padding: 10px;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+  button{
+    background-color: #1c1c1c;
+    color: antiquewhite;
+    padding: 15px 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow:0 4px 8px rgba(0,0,0,0.5) ;
+  }
+ button :hover{
+    background-color: black;
+    transform: scale(1.05);
+ }
+ #carGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+ }
+ #carGallery div{
+    background-color: #1c1c1c;
+    padding: 10px;
+    border-radius: 12px;
+    width: 320px;
+    text-align: center;
+    color: antiquewhite;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+ }
+ 
+
+
+  
+</style>
+
+<form action="https://global.toyota/jp/"> <img src="images2/flag/Flag_of_Japan.svg.png" width="30px">   
+    <input type="submit" value="Toyota site JP">                                                        
+</form> 
+<form action="https://www.honda.co.jp/"> <img src="images2/flag/Flag_of_Japan.svg.png" width="30px">
+    <input type="submit" value="Honda site JP">
+</form>
+<form action="https://www.toyota.co.kr/build-my-car/"> <img src="images2\flag\Flag_of_South_Korea.svg.png" width="30px">
+    <input type="submit" value="Toyota ST Korea"> 
+</form>
+<form action="https://auto.hondakorea.co.kr/main/"> <img src="images2\flag\Flag_of_South_Korea.svg.png" width="30px">
+    <input type="submit" value="Honda ST Korea"> 
+</form>
+<form action="https://www.hyundai.com/jp/"> <img src="images2/flag/Flag_of_Japan.svg.png" width="30px">
+    <input type="submit" value="Hyundai site JP">
+</form>
+<form action="https://www.hyundai.com/kr/ko/e"> <img src="images2\flag\Flag_of_South_Korea.svg.png" width="30px">
+    <input type="submit" value="Hyundai ST Korea">
+</form>
+<form id="form" role="search">
+<input type="search" id="query" name="search system"
+placeholder="....."
+aria-label="search through site content">                                                                                                                                                                   
+<button class="w">search</button>  <button onclick="ShowCars(event)" class="cars">Click for show top cars</button>  <button type="button" onclick="carGallery()">Cick Here to see all cars pictures</button> 
+<a href="http://127.0.0.1:5500/second_project.html/3projectregister.html">
+<button type="button">Click here to create an account</button>
+</a>
+                                                                                                                    <div id="carGallery" style="margin: 20px;"></div>
+                                                                                                                    
+                                                                                                                    <script>
+
+                                                                                                                        let galleryVisible = false;
+
+                                                                                                                        function carGallery(){
+                                                                                                                            
+                                                                                                                            const container = document.getElementById("carGallery");
+                                                                                                                            if (galleryVisible) {
+                                                                                                                                container.innerHTML = "";
+                                                                                                                            } else {
+                                                                                                                                const cars = [
+                                                                                                                                    {name:"Toyota Supra", img:"images2/Toyota Supra with tuning.jpg"},
+                                                                                                                                    {name:"Toyota Camry", img:"images2/Toyota Camry.webp"},
+                                                                                                                                    {name:"Honda NSX",    img:"images2/Honda NSX.webp"},
+                                                                                                                                    {name:"Honda Accord", img:"images2/honda-accord-sedan-sinij-vid-speredi.jpg"},
+                                                                                                                                ];
+                                                                                                                                 container.innerHTML = "";
+
+                                                                                                                                 cars.forEach(car => {
+                                                                                                                                    const card = document.createElement("div");
+                                                                                                                                    card.innerHTML = `
+                                                                                                                                        <h3 style = "color: white; text-align: center; "> ${car.name} </h3>
+                                                                                                                                        <img src="${car.img}" alt = "${car.name}" style = "width:100%; max-width:300px; border-radius:10px; margin-bottom: 20px">
+                                                                                                                                    `;
+                                                                                                                                    container.appendChild(card);
+                                                                                                                                 });
+                                                                                                                            }
+                                                                                                                        
+                                                                                                                         galleryVisible = !galleryVisible;
+                                                                                                                        }
+                                                                                                                    
+                                                                                                                        
+                                                                                                                    </script>
+                                                                                                                                                                               
+                                                                                                                        
+                                   <ul id="carList"></ul>
+
+                                   <script>
+                                     
+                                     let nameVisible = false;
+
+                                    function ShowCars(){
+                                        event.preventDefault();
+                                        
+                                        carList = document.getElementById ("carList");
+
+                                        if (nameVisible) {
+                                            carList.innerHTML = "";
+                                        } else{
+
+                                            const cars = [
+                                               {name:"Toyota Supra",link:"https://en.wikipedia.org/wiki/Toyota_Supra"},
+                                               {name:"Toyota Camry", link:"https://en.wikipedia.org/wiki/Toyota_Camry"},
+                                                {name:"Honda NSX",link:"https://en.wikipedia.org/wiki/Honda_NSX"},
+                                                {name:"Honda Accord",link:"https://en.wikipedia.org/wiki/Honda_Accord"},
+        
+                                        ]
+                                                
+
+                                            carList.innerHTML = "";
+
+                                            cars.forEach (car =>{
+                                               const li = document.createElement("li");
+
+                                               const a = document.createElement("a");
+                                               a.href = car.link;
+                                               a.textContent = car.name;
+                                               a.target = "_blank";
+                                               a.style.color = "lightblue";
+                                               a.style.textDecoration = "none";
+
+                                               li.appendChild(a);
+                                               carList.appendChild(li);
+
+                                            });
+
+                                        }
+
+                                        nameVisible = !nameVisible;
+
+                                    }
+                                        
+                                   </script>
+        
+                                
+                                                                                                    
+     <div class="important">       
+                                    
+                                     
+
+                                     
+
+                                    
+                                     
+                                     
+
+                
+     <p1><em>What we do and which services we have for our clients</em></p1>
+    <p2><em>so here at first I would like present you our company(Japan in move)</em></p2>
+    </div>
+    <h1 class="company"> to be honest we trying to improve our services and do only best for all our users<br>
+        And here I would like say that we not only selling awesome Japanese cars, also with this we help with documents<br>
+        help with delivery process of this car before you and other wonderful function and services about which I wanna tell you later<br>
+    </h1>
+    <h2 class="cars">Here I want to tell you all which cars we deliver from Japan and South Korea to Russia, we also always back to money to our clients,
+        if somethin gone wrong, so yeah you can don't worry about something because we do all what do our company is awesome for you also very comfortable,
+        well also lets I tell you all about our offices and where you can find us if you have will be some urgent questions for us.
+    </h2>
+    <address class="info">
+        I like a leader  of this company can say that our company one of best companies<br>
+        and about important information,
+        location of the first office: it's location in capital of Japan and also in capital of Estonia<br>
+        Estonian office:(Siili 102 City	Rõssa
+        State/Province/Oblast	Põlvamaa
+        Zip Code/Post Code	64127
+        Phone Number	+797 1759, this number necessary if you have some questions for our company)<br>
+        South Korea office:(Address	1169, 경기, 남양주시, 평내동, 유진마젤란아파트, 1303-5
+        Trans Address	1334-5, Yujinmajellanapateu, Pyeongnae-dong, Namyangju-si, Gyeonggi-do
+        Zip Code/Post Code	472-875
+        Phone Number	+82-3-180-5871(if you have some questions for us)
+        Temporary mail	s4lkke81mf@temporary-mail.net(also for conversation with company)
+        This is a real email address, click here to receive mails.
+        )<br>
+        <img src="images2/flag/Flag_of_South_Korea.svg.png"width="300px">
+        <img src="images2/flag/Flag_of_Japan.svg.png" width="300px">
+    </address>
+           <div class="cars">
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>   
+            <p>
+                Here I'd like to show you all the companies we work with. Let's begin with the amazing Japanese manufacturer, <strong>Toyota Industries</strong>. This company is highly respected and very popular in our organization due to their exceprional quality.
+
+            </p>
+
+            <p>
+                One of the standout cars we recommend is the <strong>Toyota Supra</strong>. It looks fantastic with any tuning and color, and it's perfect for cruising around town or enjoying a road trip.
+            </p>
+            
+            <p>
+                This car features a premium interior and comes in various styles. Our personal favourite is the black and red edition, which gives a sporty and elegant look. You'll also be amazed by its engine performance and comfort. And guess what? IT starts from just $10.000!
+            </p>
+              
+            <p>
+                We also feature cars from <strong> Honda </strong>, including rare models from a legendary classic collection. if you're a fan of performance or historical design, you'll love exploring these.
+            </p>
+           </div>
+          
+</body>
+</html>

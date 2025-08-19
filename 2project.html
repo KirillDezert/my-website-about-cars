@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autos and different news about cars</title>
+    <link src="stylesheets" href="second_project.css">
+    <script src="second_project.js" defer></script>
+</head>
+<style>
+ body{
+  background-image: url("images2/Tokyo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+        
+}
+
+.name{
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+    border-style: outset;
+    border-width: 20px;
+    border-radius: 20px;
+    background-color: antiquewhite;
+    border-color: aliceblue;
+
+}
+.describe{
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+    border-style: outset;
+    border-color: azure;
+    background-color: bisque;
+    border-width: 20px;
+    border-radius: 20px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    
+}
+.info{
+    font-size: 16px;
+    background-color: black;
+    border-style: outset;
+    border: 2px solid azure;
+    transition-duration: 0,5s;
+}
+.info:hover{
+    background-color: aquamarine;
+    color: black;
+}
+.countries{
+    font-size: 20px;
+    border-style: outset;
+    border-radius: 20px;
+    border-width: 20px;
+    background-color: bisque;
+    box-shadow: white;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    align-items: center;
+    border-color: aquamarine;
+}
+.clients{
+    font-size: 20px;
+    border-style: outset;
+    border-radius: 20px;
+    border-width: 20px;
+    background-color: bisque;
+    box-shadow: black;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    align-items: center;
+    border-color: aqua;
+}
+.people{
+    font-size: 16px;
+    border-style: outset;
+    border: 2px solid wheat;
+    background-color: black;
+    box-shadow: darkgreen;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    align-items: center;
+    transition-duration: 0,5s;
+}
+.people:hover{
+    background-color: aquamarine;
+    color: black;
+}
+.contract{
+    font-size: 16px;
+    border-style: outset;
+    border: 2px solid wheat;
+    background-color: black;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    align-items: center;
+}
+.s{
+    font-size: 16px;
+    border-style: outset;
+    border: 2px solid blanchedalmond;
+    background-color: black;
+    transition-duration: 0,5px;
+}
+.s:hover{
+    background-color: aquamarine;
+    color: black ;
+}
+.cars{
+    font-size: 16px;
+    border-style: outset;
+    border: 2px solid white;
+    background-color: black;
+    transition-duration: 0,5s;
+}
+.cars:hover{
+    background-color: aliceblue;
+    color: black;
+}
+.Supra{
+    font-size: 20px;
+    border-style: outset;
+    border-radius: 20px;
+    border-width: 20px;
+    border-color: blue;
+    background-color: antiquewhite;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    align-items: center;
+}
+.TSupra{
+    font-size: 20px;
+    border-style: outset;
+    border-radius: 20px;
+    border-width: 20px;
+    border-color: brown;
+    background-color: azure;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    align-items: center;
+
+}
+.timeline{
+    font-size: 16px;
+    margin: 10px;
+    border-style: outset;
+    border-radius: 10px;
+    border-width: 10px;
+    background-color: black;
+    color: aquamarine;
+    border-color: aqua;
+    box-shadow: gray;
+    border-right: 14px;
+    width: 400px;
+    font-family: sans-serif;
+    border-right: 14px 0 0 solid black;
+
+}
+.time{
+    font-size: 16px ;
+    color: aquamarine;
+    
+}
+.Us{
+    font-size: 16px;
+    border-style: outset;
+    border: 2px solid white;
+    background-color: black;
+    transition-duration: 0,5s;
+}
+.Us:hover{
+    background-color: aquamarine;
+    color: black
+}
+.c1{
+    font-size: 16px;
+    border-style: outset;
+    border: 2px solid white;
+    background-color: black;
+    transition-duration: 0,5s;
+}
+.c1:hover{
+    background-color: aquamarine;
+    color: black;
+}
+.Honda{
+    font-size: 20px;
+    border-style: outset;
+    border: 12px solid aquamarine;
+    font-weight: bold;
+    background-color: bisque;
+}
+.about{
+    border-style: outset;
+    border-radius: 10px;
+    border-width: 10px;
+    border: 12px solid wheat;
+    background-color: whitesmoke;
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+}
+</style>
+<body>
+   <div  class="timeline">
+    <p> the real time </p>
+    <div class="time">22:44</div>
+    <div class="date">16 August 2024</div>
+   </div>
+    <button onclick="contract" class="c1">contracts</button>
+    <button onclick="Visa()" class="info">information for users</button>
+    <script>
+        document.getElementById('Visa').onclick = Visa;
+        function Visa() {
+            alert('Here will be short information for users of our website,for sure this website was create for thsoe people who want to buy some kind of wonderful ')
+        }
+    </script>
+    </script>
+    <button onclick="user()"class="people">user</button>
+    <script>
+        document.getElementById('user').onclick = user;
+        function user() {
+            alert('So Hello user this the page special for you and we want to tell some information about our website, this website was created for those people who love cars and who want buy one of this cars for good price')
+        }
+
+    </script>
+    <button onclick="car()" class="cars">information about various cars</button>
+    <script>
+        document.getElementById('car').onclick=car;
+        function car() {
+            alert('Here will be information about price of different cars and generally which cars you can buy in our shop and heres the list of all cars(and some information about this cars will be on low level of the page). 1:Toyota Supra(old edition), one of really the best choices if you want be more cool on awesome race event or just drive around night city (Price:250.000$), second car will be new Toyota Supra version(2024): wonderful version for those people who want drive in comfortable enviroment and also drive without any problems at winter time because in this car there are many technologies which can do your life more easy particulary special technology for winter time which will be warming your aimchair up when outside will be somewhere -20 and her current price(350.000$)')
+        }
+    </script>
+     <form action="http://127.0.0.1:5500/second_project.html/page.html?">
+        <input type="submit" value="important info about various cars">
+  <style>
+  </style>
+    <form id="form" role="search">
+    <input  type="search" id="query" name="q"
+    placeholder="....."
+    aria-label="search through site content">
+    <button class="s">search</button>
+    <p class="name">Welcome to website about various cars</p>
+    <p2 class="describe">Here will be information about our company,
+        and firstly, we're helping to different peopel buy various cars and find a great saler  
+        for buy a car and you can trust them because our company because we helping to various people somehwere 20 years
+        we just helping to different people with sell process of their cars and also we help to our clients with buy of these various cars.
+    </p2>
+        <address class="about">
+            where location our office for work with clients who want buy car:<br>
+            Estonia, Tallin: KurooKesko 45, koskayoookereta, beside to the main goverment building:<br>
+            the first phone number for connect: (+378-679-78-99)-work at anytime:<br>
+            the second phone number for connect(it also work at anytime):(00-372-99-79) the number which allow you call into office for solve of important problams:<br>
+            and if you from East Europe for you we created this website(JDMcars.EE-Tallin.ee):<br>
+            but if you from west Europe, for you this link will be good (JDMwcarEE-Tallin.ee):<br>
+            <img src="images2/Eesti flag.webp" width="300px">
+        </address>
+    <h1 class="clients"><em>And like the first information on this main place of our website about various cars I how the leader of this company can say that you
+        don't will regret if you will use our help because we have really good and kind workers which can help in no time, and in the next article
+        what we can do for our clients.
+    </em></h1>
+    <h2 class="countries"><em>firstly: we have many people who working abroad and exactly in Japan and South Korea, why only from these two countries?
+        And here I would like say that our website specializating only on Japanese and Korean cars because majority popular marks of cars
+        location in these two countries, and that awesome that you can get these different cars with our help without any problems and also for 
+        good price, for example we have different people who working in company Toyota and Honda and when we are ordering different cars there
+        for our clients they do for us special discount and that will be awesome for you also
+        secondly: you can get awesome opportunity will become one of our workers and drive to Japan and South Korea almost each month for different 
+        tasks which you will be getting from our company and together with this you will be getting awesome salary according Europian static about
+        salary which averge human getting for his job, and for in Estonia where we are working people in our company getting 2000 euro in month and that
+        enough good salary so yeah with such salary you able to  traveling around all world and feeling really good
+        </em></h2>
+        <h3 class="Supra">And let's I finally will tell you one of various cars which, and first car will be Toyota Supra (this car very popular among our clients,
+            and it has very popular status around all world, especially in East countries and Asian countries, and if you will ask me that car deserve that to you will buy her,
+            I immedately will answer yes because it very fast and together with this looks really awesome), and yeah these different great moments which 
+        I told you about this car, this true because we also have various people who can test these various cars, and here's her photo,
+        and some information about her popular status to be honest it started so popular because of that majority people who love drifting using her
+        for these various drift races and also it can looks really good with any tuning  (Price:250.000$) <a href="https://en.wikipedia.org/wiki/Toyota_Supra">more info about Supra</a></h3>
+        <img src="images2/for the second project.webp"> <img src="images2/flag/Flag_of_Japan.svg.png">         
+        <h4 class="TSupra">and also on our website and auto shop you will be able to already soon order new version of Toyota Supra,
+            which was announced by Toyota in 2022 but because of sanctions this car wasn't in this shop but we finally found several countries,
+            which ready to start deliver to our different shops this car and that means that already in autumn of this year you have will be
+            really good opportunity for buy this car and here's this wondreful here's this car,
+            and it was realised in 2024 and to be honest looks not bad therefore you also will be able to buy this car in our in the future, according
+            information which we got from Japan it will be costs (350.000$)
+            <img src="images2/fbb60effbcde85ddbeb9793541516355.jpg" width="300px">   <img src="images2/flag/Flag_of_Japan.svg.png">   <a href="https://en.wikipedia.org/wiki/Toyota_C-HR">if you need more information about thic car click Here</a>  </h4>
+            <div class="Honda">
+            <p><em> I would like tell you some information about another popular mark of Japanese which there are in our shop and that Honda</em></p>
+            <h1>Here we will try to you some information about different popular versions of car Honda and I mean those cars which popular at real time,
+                Let's start with (Honda Fit): Honda Fit one of really good cars from Japan because this car has really awesome technologies and together with this,
+                her details has good quality even in old models and therefore you can don't worry about various unexpect situations where your car can break down(particulary in new versions,
+                because recently we found out that for create of these different cars in Honda using different really good details which can enquier your car very long life)
+                and another information that this car will be more good for those people who have really big family, and let's finally we will tell you about price,
+                also here you can check how to this car looks out
+                <img src="images2/Honda.jpg" width="500">
+                <img src="images2/Honda2.jpg" width="500">
+                <img src="images2/Honda 3.jpg" width="500"><img src="images2/flag/Flag_of_Japan.svg.png" width="300px">
+                <h2>Here I would like tell you something about company Honda, Honda company one of popular and famous in Japan which create different cars with big quality of various
+                    details in these cars and in my opinion this company deserves such good status among various companies which specializating on various cars, and also 
+                    about highest quality of these various cars, I would like mention about one of legendary Japanese cars and this like Toyota Supra but this car was created by Honda
+                    and this Honda Accord it has almost the same status like Supra and looks to be honest really awesome particulary with this moment that you can use with this car any tuning and that
+                    anyway will be good
+                    (Honda Accord)
+                    <img src="images2/250px-Honda-Motor-Aoyama-01.jpg">
+                    and about this photo which was took by one of our workers in the center of really cool Japanese city like Tokyo which very popular<br>
+                    different bussiness and for life and Honda corporate not alone who chosen this place for their bussiness, this is also Toyota,Suzuki and others<br>
+                    also about Honda Industries this company arrived in Japan several years ago and first her cars were for chores but later Honda started to do really<br>
+                    good cars which very popular at real time , but according opinion of our clients older cars from this company is better than new
+                    <em>Let's discuss also something about other companies</em>
+                    <em>Toyota Industries</em>
+                    <h1 class="Toyota">Here I want to talk about Toyota Industries that's also one of big company which was created by one very smart Japanese guy<br>
+                    </h1>
+
+                </h2>
+                <em>Toyota Industries</em>
+                    <h3 class="Toyota">Here I want to talk about Toyota Industries that's also one of big company which was created by one very smart Japanese guy<br>
+                        and let's also I will tell you about this long way, long way to really good results, well that's story started in Tokyo at <em> August 23, 1937 year</em><br>
+                        also I want to tell my opinion about this company in my opinion those people who became like really good specialists should work in our company<br>
+                        also we giving our new workers really good salary so yeah if you want living in Tokyo and also became like a great worker in popular and very famous company<br>
+                        then you're necessary go to Tokyo and here's all information about us about the address<br>
+                        <em>And also I wanna add that we have big office in Tokyo and below this text will be all information</em>
+                        <address>
+                            the text special for our clients
+                            where location our second office (info for our clients)<br>
+                            Japan,Tokyo:(トウキョウト, ミナトク, コウナンシナガワインターシティCトウ(11カイ), 153-1042);<br>
+                            our Japanese number(for connect with Japanese office of our comapny):+8135-052-9705 "avaible at anytime"<br>
+                            Temporary mail:Tokyocars@gmail.com<br>
+                            the second Temporary mail:Tokyocitymarket@gmail.com<br>
+                            another Japanese contect number: +81-905-556-17<br>
+                            additional our service for fast fix:Tokyo-street 237-456<br>
+                        </address>
+                        <img src="images2/Honda_logo.svg.png">(wonderful logo Honda Industries which was created in 2000 year)
+                        <img src="images2/Toyota.svg.png">(beautiful logo of the best Japanese company like Toyota)
+                        
+                    </h3>
+            </div>
+            </h1>     
+</body>
+</html>
